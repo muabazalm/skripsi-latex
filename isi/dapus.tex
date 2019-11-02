@@ -1,0 +1,12 @@
+\pagenumbering{gobble}
+\def\bibindent{1em}
+\renewcommand*{\bibname}{Daftar Pustaka}
+\begin{thebibliography}{99}
+\makeatletter
+\let\old@biblabel\@biblabel
+\def\@biblabel#1{\old@biblabel{#1}\kern\bibindent}
+\let\old@bibitem\bibitem
+\def\bibitem#1{\old@bibitem{#1}\leavevmode\kern-\bibindent}
+\makeatother
+\bibitem{ref1}{Labsphere, \emph{Technical Guide, Integrating Sphere Radiometry and Photometry, North Sutton}}
+\end{thebibliography}

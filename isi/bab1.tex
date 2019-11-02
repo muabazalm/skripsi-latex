@@ -1,0 +1,40 @@
+% \begingroup
+% \linenumbers
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\chapter{Judul Bab}
+	\section{Section}
+
+
+		Contoh penggunaan referensi dapus \cite{ref1}
+
+
+	\begin{figure}[!htbp] 
+		\begin{center} 
+		\includegraphics[width=0.7\textwidth,angle=0]{gambar/logounpad.jpg}
+		\end{center} 
+		\caption{Logo Unpad}
+		\label{fig:is}
+	\end{figure}
+
+
+	Contoh penggunaan referensi gambar ~\ref{fig:is}
+
+
+	\begin{table}[!htbp]
+		\centering
+	\caption{Hasil Kalibrasi}
+	\begin{tabular}{|c|c|c|}
+		\hline
+	\multirow{2}{*}{LED}    & \multicolumn{2}{|c|}{Data Eksperimen} \\ \cline{2-3}
+					 & E (lux)          & T  ($\circ C$)        \\ \hline
+	CREE XM-L2 U2 WHITE & 7240                 & 68,4 \\ \hline
+	CREE XR-E Q5 WHITE  & 4238                 & 88,6 \\ \hline
+	CREE XM-L1 T4 WARM  & 5502                 & 56,8 \\ \hline
+	CREE XR-E Q5 WARM   & 3890                 & 74,2 \\ \hline
+	\end{tabular}
+	\label{tab:kal}
+	\end{table}
+
+	
+	Contoh penggunaan referensi tabel ~\ref{tab:kal}
